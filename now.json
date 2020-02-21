@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@now/node" }],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js",
+      "methods": ["OPTIONS","GET","POST"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "OPTIONS",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+      }
+    }
+  ]
+}
