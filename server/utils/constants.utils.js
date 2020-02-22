@@ -8,6 +8,7 @@ class Constants {
     static CODE_NOT_FOUND = 400;
 
     // MESSAGES
+    static MSJ_INTERNAL_ERROR = 'Error Interno';
     static MSJ_USER_NOT_FOUND = 'usuario no encontrado';
     static MSJ_USER_PASS_NOT_MATCH = 'usuario y contraseña incorrectos';
 

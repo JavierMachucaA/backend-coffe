@@ -9,6 +9,6 @@ app.get('/', (req, res) => {
 
 // ROUTES
 app.use(require('./auth.routes'));
-app.use(require('./users.routes'));
+app.use('/users',require('./users.routes'));
 
 module.exports = app;

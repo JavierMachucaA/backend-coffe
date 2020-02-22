@@ -16,9 +16,8 @@ mongoose.connect(process.env.URLDB,{ useNewUrlParser: true, useUnifiedTopology: 
   (err,res) => {
       console.log("Base de datos Conectada ...");
   }
-)
+);
 
-// app.set('key', process.env.SEED);
 // Body parser
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
