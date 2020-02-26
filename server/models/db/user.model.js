@@ -15,6 +15,10 @@ const userSchema = new Schema({
     password: {
         type: String,
         required: [true, 'Password es requerido']
+    },
+    enable: {
+        type: Boolean,
+        required: [true,'Estado es requerido']
     }
 });
 

@@ -1,0 +1,2 @@
+now dev
+$SHELL

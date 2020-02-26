@@ -13,7 +13,7 @@ mongoose.set('useFindAndModify', false);
 process.env.URLDB = `mongodb://${process.env.URL_DB}/${process.env.COLLECTION}`
 console.log(process.env.URLDB);
 mongoose.connect(process.env.URLDB,{ useNewUrlParser: true, useUnifiedTopology: true  },
-  (err,res) => {
+  () => {
       console.log("Base de datos Conectada ...");
   }
 );
